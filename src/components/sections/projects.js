@@ -227,7 +227,6 @@ const Projects = () => {
           <div className="folder">
           
           <div className="project-image">
-                  <GatsbyImage image="https://www.thoughtco.com/thmb/ujLvhwDZXeHdqRAxQ0nUP69FIN0=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-116248249-5be59c3cc9e77c00514fed87.jpg" alt={title} className="img" />
                     <GatsbyImage image={image} alt={title} className="img" />
                   
                 </div>
