@@ -1,324 +1,191 @@
-import React, { useEffect, useRef } from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import sr from '@utils/sr';
 import { srConfig } from '@config';
+import sr from '@utils/sr';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const StyledProjectsGrid = styled.ul`
-  ${({ theme }) => theme.mixins.resetList};
+const StyledProjectsSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  a {
+  h2 {
+    font-size: clamp(24px, 5vw, var(--fz-heading));
+  }
+
+  .archive-link {
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    &:after {
+      bottom: 0.1em;
+    }
+  }
+
+  .projects-grid {
+    ${({ theme }) => theme.mixins.resetList};
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 15px;
     position: relative;
-    z-index: 1;
+    margin-top: 50px;
+
+    @media (max-width: 1080px) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+
+  .more-button {
+    ${({ theme }) => theme.mixins.button};
+    margin: 80px auto 0;
   }
 `;
 
 const StyledProject = styled.li`
   position: relative;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(12, 1fr);
-  align-items: center;
+  cursor: default;
+  transition: var(--transition);
 
-  @media (max-width: 768px) {
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover,
+    &:focus-within {
+      .project-inner {
+        transform: translateY(-7px);
+      }
+    }
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+  }
+
+  .project-inner {
     ${({ theme }) => theme.mixins.boxShadow};
+    ${({ theme }) => theme.mixins.flexBetween};
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1.75rem;
+    border-radius: var(--border-radius);
+    overflow: auto;
   }
 
-  &:not(:last-of-type) {
-    margin-bottom: 100px;
+  .project-top {
+    ${({ theme }) => theme.mixins.flexBetween};
+    margin-bottom: 35px;
 
-    @media (max-width: 768px) {
-      margin-bottom: 70px;
-    }
-
-    @media (max-width: 480px) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &:nth-of-type(odd) {
-    .project-content {
-      grid-column: 7 / -1;
-      text-align: right;
-
-      @media (max-width: 1080px) {
-        grid-column: 5 / -1;
-      }
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-        padding: 40px 40px 30px;
-        text-align: left;
-      }
-      @media (max-width: 480px) {
-        padding: 25px 25px 20px;
+    .folder {
+      color: var(--green);
+      svg {
+        width: 40px;
+        height: 40px;
       }
     }
-    .project-tech-list {
-      justify-content: flex-end;
 
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-      }
+    .project-links {
+      display: flex;
+      align-items: center;
+      margin-right: -10px;
+      color: var(--light-slate);
 
-      li {
-        margin: 0 0 5px 20px;
+      a {
+        ${({ theme }) => theme.mixins.flexCenter};
+        padding: 5px 7px;
 
-        @media (max-width: 768px) {
-          margin: 0 10px 5px 0;
+        &.external {
+          svg {
+            width: 22px;
+            height: 22px;
+            margin-top: -4px;
+          }
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
         }
       }
     }
-    .project-links {
-      justify-content: flex-end;
-      margin-left: 0;
-      margin-right: -10px;
-
-      @media (max-width: 768px) {
-        justify-content: flex-start;
-        margin-left: -10px;
-        margin-right: 0;
-      }
-    }
-    .project-image {
-      grid-column: 1 / 8;
-
-      @media (max-width: 768px) {
-        grid-column: 1 / -1;
-      }
-    }
-  }
-
-  .project-content {
-    position: relative;
-    grid-column: 1 / 7;
-    grid-row: 1 / -1;
-
-    @media (max-width: 1080px) {
-      grid-column: 1 / 9;
-    }
-
-    @media (max-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      height: 100%;
-      grid-column: 1 / -1;
-      padding: 40px 40px 30px;
-      z-index: 5;
-    }
-
-    @media (max-width: 480px) {
-      padding: 30px 25px 20px;
-    }
-  }
-
-  .project-overline {
-    margin: 10px 0;
-    color: var(--green);
-    font-family: var(--font-mono);
-    font-size: var(--fz-xs);
-    font-weight: 400;
   }
 
   .project-title {
+    margin: 0 0 10px;
     color: var(--lightest-slate);
-    font-size: clamp(24px, 5vw, 28px);
+    font-size: var(--fz-xxl);
 
-    @media (min-width: 768px) {
-      margin: 0 0 20px;
-    }
+    a {
+      position: static;
 
-    @media (max-width: 768px) {
-      color: var(--white);
-
-      a {
-        position: static;
-
-        &:before {
-          content: '';
-          display: block;
-          position: absolute;
-          z-index: 0;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-        }
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
       }
     }
   }
 
   .project-description {
-    ${({ theme }) => theme.mixins.boxShadow};
-    position: relative;
-    z-index: 2;
-    padding: 25px;
-    border-radius: var(--border-radius);
-    background-color: var(--light-navy);
     color: var(--light-slate);
-    font-size: var(--fz-lg);
-
-    @media (max-width: 768px) {
-      padding: 20px 0;
-      background-color: transparent;
-      box-shadow: none;
-
-      &:hover {
-        box-shadow: none;
-      }
-    }
+    font-size: 17px;
 
     a {
       ${({ theme }) => theme.mixins.inlineLink};
-    }
-
-    strong {
-      color: var(--white);
-      font-weight: normal;
     }
   }
 
   .project-tech-list {
     display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-    margin: 25px 0 10px;
     padding: 0;
+    margin: 20px 0 0 0;
     list-style: none;
 
     li {
-      margin: 0 20px 5px 0;
-      color: var(--light-slate);
       font-family: var(--font-mono);
-      font-size: var(--fz-xs);
-      white-space: nowrap;
-    }
+      font-size: var(--fz-xxs);
+      line-height: 1.75;
 
-    @media (max-width: 768px) {
-      margin: 10px 0;
-
-      li {
-        margin: 0 10px 5px 0;
-        color: var(--lightest-slate);
-      }
-    }
-  }
-
-  .project-links {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 10px;
-    margin-left: -10px;
-    color: var(--lightest-slate);
-
-    a {
-      ${({ theme }) => theme.mixins.flexCenter};
-      padding: 10px;
-
-      &.external {
-        svg {
-          width: 22px;
-          height: 22px;
-          margin-top: -4px;
-        }
-      }
-
-      svg {
-        width: 20px;
-        height: 20px;
-      }
-    }
-
-    .cta {
-      ${({ theme }) => theme.mixins.smallButton};
-      margin: 10px;
-    }
-  }
-
-  .project-image {
-    ${({ theme }) => theme.mixins.boxShadow};
-    grid-column: 6 / -1;
-    grid-row: 1 / -1;
-    position: relative;
-    z-index: 1;
-
-    @media (max-width: 768px) {
-      grid-column: 1 / -1;
-      height: 100%;
-      opacity: 0.25;
-    }
-
-    a {
-      width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-      vertical-align: middle;
-
-      &:hover,
-      &:focus {
-        background: transparent;
-        outline: 0;
-
-        &:before,
-        .img {
-          background: transparent;
-          filter: none;
-        }
-      }
-
-      &:before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 3;
-        transition: var(--transition);
-        background-color: transparent;
-        mix-blend-mode: screen;
-      }
-    }
-
-    .img {
-      border-radius: var(--border-radius);
-
-      @media (max-width: 768px) {
-        object-fit: cover;
-        width: auto;
-        height: 100%;
+      &:not(:last-of-type) {
+        margin-right: 15px;
       }
     }
   }
 `;
 
-const Featured = () => {
+const Projects = () => {
   const data = useStaticQuery(graphql`
-    {
-      featured: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/featured/" } }
-        sort: { fields: [frontmatter___date], order: ASC }
+    query {
+      projects: allMarkdownRemark(
+        filter: {
+          fileAbsolutePath: { regex: "/content/projects/" }
+          frontmatter: { showInProjects: { ne: false } }
+        }
+        sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
           node {
             frontmatter {
-              title
               cover {
                 childImageSharp {
                   gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
               }
+              title
               tech
               github
               external
-              cta
             }
             html
           }
@@ -327,8 +194,9 @@ const Featured = () => {
     }
   `);
 
-  const featuredProjects = data.featured.edges.filter(({ node }) => node);
+  const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
+  const revealArchiveLink = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
 
@@ -338,76 +206,128 @@ const Featured = () => {
     }
 
     sr.reveal(revealTitle.current, srConfig());
+    sr.reveal(revealArchiveLink.current, srConfig());
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
-  return (
-    <section id="projects">
-      <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
-      </h2>
+  const GRID_LIMIT = 4;
+  const projects = data.projects.edges.filter(({ node }) => node);
+  const firstSix = projects.slice(0, GRID_LIMIT);
+  const projectsToShow = showMore ? projects : firstSix;
 
-      <StyledProjectsGrid>
-        {featuredProjects &&
-          featuredProjects.map(({ node }, i) => {
-            const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
-            const image = getImage(cover);
+  const projectInner = node => {
+    const { frontmatter, html } = node;
+    const { github, external, title, tech, cover } = frontmatter;
+    const image = getImage(cover);
 
-            return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
-                <div className="project-content">
-                  <div>
-                    <p className="project-overline">Featured Project</p>
-
-                    <h3 className="project-title">
-                      <a href={external}>{title}</a>
-                    </h3>
-
-                    <div
-                      className="project-description"
-                      dangerouslySetInnerHTML={{ __html: html }}
-                    />
-
-                    {tech.length && (
-                      <ul className="project-tech-list">
-                        {tech.map((tech, i) => (
-                          <li key={i}>{tech}</li>
-                        ))}
-                      </ul>
-                    )}
-
-                    <div className="project-links">
-                      {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
-                          View Case Study
-                        </a>
-                      )}
-                      {github && (
-                        <a href={github} aria-label="GitHub Link">
-                          <Icon name="GitHub" />
-                        </a>
-                      )}
-                      {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
-                          <Icon name="External" />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
+    return (
+      <div className="project-inner">
+        <header>
+          <div className="project-top">
+          <div className="folder">
+          
+          <div className="project-image">
+                  
                     <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
+                  
                 </div>
-              </StyledProject>
-            );
-          })}
-      </StyledProjectsGrid>
-    </section>
+            </div>
+            <div className="project-links">
+              {github && (
+                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                  <Icon name="GitHub" />
+                </a>
+              )}
+
+{external && (
+                
+                <a
+                  href={external}
+                  aria-label="External Link"
+                  className="external"
+                  target="_blank"
+                  rel="noreferrer">
+                 <Icon name="Folder" /> 
+                 
+                </a>
+              )}
+            
+              {external && (
+                
+                <a
+                  href={external}
+                  aria-label="External Link"
+                  className="external"
+                  target="_blank"
+                  rel="noreferrer">
+                 <Icon name="Folder" /> 
+                 
+                </a>
+              )}
+            </div>
+          </div>
+
+      
+
+          <h3 className="project-title">
+            
+              {title}
+            
+          </h3>
+
+          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+        </header>
+
+        <footer>
+          {tech && (
+            <ul className="project-tech-list">
+              {tech.map((tech, i) => (
+                <li key={i}>{tech}</li>
+              ))}
+            </ul>
+          )}
+        </footer>
+      </div>
+    );
+  };
+
+  return (
+    <StyledProjectsSection>
+      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
+
+      <ul className="projects-grid">
+        {prefersReducedMotion ? (
+          <>
+            {projectsToShow &&
+              projectsToShow.map(({ node }, i) => (
+                <StyledProject key={i}>{projectInner(node)}</StyledProject>
+              ))}
+          </>
+        ) : (
+          <TransitionGroup component={null}>
+            {projectsToShow &&
+              projectsToShow.map(({ node }, i) => (
+                <CSSTransition
+                  key={i}
+                  classNames="fadeup"
+                  timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
+                  exit={false}>
+                  <StyledProject
+                    key={i}
+                    ref={el => (revealProjects.current[i] = el)}
+                    style={{
+                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
+                    }}>
+                    {projectInner(node)}
+                  </StyledProject>
+                </CSSTransition>
+              ))}
+          </TransitionGroup>
+        )}
+      </ul>
+
+    </StyledProjectsSection>
   );
 };
 
-export default Featured;
+export default Projects;
