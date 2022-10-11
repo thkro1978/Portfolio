@@ -1,5 +1,5 @@
 ---
-date: '2019-07-15'
+date: '2020-01-15'
 cover: 'images/Corplex.png'
 title: 'Order to Quote Automation'
 tech:
