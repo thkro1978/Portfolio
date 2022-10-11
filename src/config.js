@@ -1,27 +1,24 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'thomas@kroell.co.uk',
 
   socialMedia: [
     {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/thomaskroell',
+    },
+    {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/thomaskroell',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/thomaskroell',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://twitter.com/kingkroell',
     },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
-    },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
+    
   ],
 
   navLinks: [
