@@ -1,7 +1,7 @@
 ---
 date: '2020-03-27'
 cover: 'images/eBike.png'
-title: 'Blockchain eBike Rental Platform'
+title: 'Blockchain eBike Platform'
 github: ''
 external: ''
 tech:
