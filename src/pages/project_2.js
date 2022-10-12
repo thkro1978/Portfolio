@@ -155,7 +155,7 @@ const ArchivePage = ({ location, data }) => {
 
       <main>
         <header ref={revealTitle}>
-          <h1 className="big-heading">Portal UX Improvements</h1>
+          <h1 className="big-heading">Onboarding Portal</h1>
           <p className="subtitle">Client: Tungsten Network<br/> Role: Lead UX Designer
            </p>
         </header>
@@ -163,7 +163,7 @@ const ArchivePage = ({ location, data }) => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../images/TN-02.png"
+              src="../images/TN-Onboarding-1.png"
               maxWidth={990}
               quality={100}
               formats={['AUTO', 'WEBP', 'AVIF']}
@@ -175,9 +175,11 @@ const ArchivePage = ({ location, data }) => {
           <table>
             <tbody>
               <tr>
-                <td className="overline year"><h2>Problem</h2></td>
+                <td className="overline year"><h2>Project Goals</h2></td>
 
-                <td>To improve Tungsten Network's supplier portal experience and become a more customer-led organisation an initiative was created to implement design thinking processes into the business. My role was to help lead the customer research and facilitation of design thinking workshops. These workshops were used to understand our customers better to deliver creative solutions and help solve common pain points. After each key project milestone, I would provide updates to c-suite executives and heads of departments.<br/><br/>
+                <td>To improve Tungsten Network's supplier portal experience and become a more customer-led organisation an initiative was created to implement design thinking processes into the business. 
+                  My role was to help lead the customer research and facilitation of design thinking workshops. These workshops were used to understand our customers better to deliver creative solutions 
+                  and help solve common pain points. After each key project milestone, I would provide updates to c-suite executives and heads of departments.<br/><br/>
                 </td>
                 <td></td>
               </tr>
@@ -213,7 +215,28 @@ const ArchivePage = ({ location, data }) => {
               <tr>
               <td className="overline year"><h2>Building Empathy</h2></td>
 
-                <td>For the first phase, we interviewed 35 customers to understand our customer's jobs to be done, where they are struggling and what success looks like to them. We then collaboratively defined our personas, collected interview quotes, and sorted them into key topics.<br/><br/>
+                <td>Together with the Product Manager, BA and Technical Leads, we collaborativley workshoped with various stakeholders and teams to 
+                understand the "As is" back office process. After a number of workshops we collaborativley defined the "To be" backend process using 
+                story mapping techniques to help create seamless user journeys, the relevant email notifications to be sent and key functional requirements.<br/><br/>
+                    <div className="wrapper">
+                      <StaticImage
+                        className="img"
+                        src="../images/TN-Persona.jpg"
+                        maxWidth={990}
+                        quality={100}
+                        formats={['AUTO', 'WEBP', 'AVIF']}
+                        alt="Headshot"
+                      />
+                    </div><br/><br/> 
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+              <td className="overline year"><h2>Customer research</h2></td>
+
+                <td>For the first phase, we interviewed 35 customers to understand our customer's jobs to be done, where they are struggling and what success looks like to them. 
+                  We then collaboratively defined our personas, collected interview quotes, and sorted them into key topics.<br/><br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -228,26 +251,60 @@ const ArchivePage = ({ location, data }) => {
                 <td></td>
               </tr>
 
+              
+
               <tr>
               <td className="overline year"><h2>Ideation</h2></td>
 
-                <td>While mapping the customer journey I was able to highlight parts the journey where the customer was struggling.<br/><br/>
-                Questionnaire - Some parts of the implementation require a more technical person to assist with the set-up instead of the account owner
-                Creating the test file - Documentation was overwhelming and caused delays in customer sending their first invoice scenario
-                Approval of PDF example - There are communication delays and too many errors on the final step of the implementation process<br/><br/>
+                <td>Based on customer feedback and business goals the team decided to focus on improving the invoice status journey and experience. 
+                  This part of the supplier journey provides the most value to suppliers as it is critical for them to get paid on time and improve business cash flow. 
+                  During this phase, we mapped out the current journey and highlighted where we could improve and reduce the steps. 
+                  We also looked at other experiences we thought were "best in class" to help with the brainstorming session. 
+                  Collaboratively we mapped out the screens and designed an experience that we thought would be the best experience for our customers.<br/><br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-02.png"
+                        src="../images/TN-02.jpg"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
                         alt="Headshot"
                       />
-                          <div className="wrapper">
+                    </div><br/><br/> 
+                </td>
+                <td></td>
+              </tr>    
+
+              <tr>
+              <td className="overline year"><h2>Storyboarding</h2></td>
+
+                <td>Storyboards were developed to easily understand the flow of our customer interaction with the product, giving everyone on the project a clear sense of what’s 
+                  important for users and where we could add innovation when looking for further improvements.<br/><br/>
+
+                    <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-03.png"
+                        src="../images/TN-Storyboarding.jpg"
+                        maxWidth={990}
+                        quality={100}
+                        formats={['AUTO', 'WEBP', 'AVIF']}
+                        alt="Headshot"
+                      />
+                    </div><br/><br/> 
+                </td>
+                <td></td>
+              </tr>
+
+              <tr>
+              <td className="overline year"><h2>Task Flow Diagrams</h2></td>
+
+                <td>Mapping out the user journey for each persona and all the touchpoints and required UIs after full analysis. 
+                  Task flow helped to show all the screens required and how they fit within the happy and unhappy customer paths.<br/><br/>
+
+                    <div className="wrapper">
+                      <StaticImage
+                        className="img"
+                        src="../images/TN-Task-Flow-Diagram.jpg"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
@@ -261,26 +318,81 @@ const ArchivePage = ({ location, data }) => {
               <tr>
               <td className="overline year"><h2>Prototyping + Testing </h2></td>
 
-                <td>Interactive high fidelity protoypes were created for user testing and feedback. Using hotjar, I ran a survey on the portal asking the users to view the new status page prototype with open ended questions to get there feelings and detailed unbiased feedback. This helped us get customer perspective of the design using a low-cost prototype requiring no development. 
-Quickly identify if we are going in the right direction and iterating based on feedback.<br/><br/>
+                <td>The last phase would be iterating on lo-fi wireframes with the team, presenting back to stakeholders and customers 
+                for further feedback before building hi-fi wireframes with the UI designer. During this phase, we presented final UIs 
+                for the last round of customer feedback before handing it over for development. Customers agreed that the new process and 
+                designs are a big improvement over the current offline process and had also suggested several improvements which we considered 
+                and highlighted to include in the final designs.<br/><br/>
+
+                <b>Customer Feedback</b><br/><br/>
+                I want to know more about how the subscription model will work, how do I upgrade and downgrade my account?<br/>
+I don't see a summary of items I am purchasing while entering my card details<br/>
+Our company has multiple billing contacts and need to be able to manage that.<br/><br/>
+
+                <b>Action points based on feedback</b><br/><br/>
+
+                We added FAQs section which is linked to an external Salesforce knowledge based platform mainted by customer support.<br/>
+On checkout it was also mentioned it would be helpful to include a summary of the items to be purchased while completing the transaction.<br/>
+In many instances there are multiple billing contacts for larger customers so we add the ability to manage multiple contacts.<br/><br/>
                 </td>
                 <td></td>
               </tr>
 
               <tr>
-              <td className="overline year"><h2>Iteration</h2></td>
-                
-                <td>
-                After synthesizing the results I looped back customer feedback to stakeholders, sharing suggested improvements and next steps in the design process:<br/><br/>
-
-Adding a paid status would be useful<br/>
-The ability to view multiple invoices, one by one is extremely time consuming<br/>
-Livechat to challenge or understand exceptions would be a good thing<br/>
+              <td className="overline year"><h2>Designs</h2></td>
 
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-05.png"
+                        src="../images/TN-Buyer_Portal_Suppliers.png"
+                        maxWidth={990}
+                        quality={100}
+                        formats={['AUTO', 'WEBP', 'AVIF']}
+                        alt="Headshot"
+                      />
+                    </div><br/><br/> 
+
+                    Supplier Onboarding Portal<br/>
+
+                    <div className="wrapper">
+                      <StaticImage
+                        className="img"
+                        src="../images/TN-Onboarding.png"
+                        maxWidth={990}
+                        quality={100}
+                        formats={['AUTO', 'WEBP', 'AVIF']}
+                        alt="Headshot"
+                      />
+                    </div><br/><br/> 
+
+                    <div className="wrapper">
+                      <StaticImage
+                        className="img"
+                        src="../images/TN-Upload_Files.png"
+                        maxWidth={990}
+                        quality={100}
+                        formats={['AUTO', 'WEBP', 'AVIF']}
+                        alt="Headshot"
+                      />
+                    </div><br/><br/> 
+
+                    <div className="wrapper">
+                      <StaticImage
+                        className="img"
+                        src="../images/TN-Questionnaire.png"
+                        maxWidth={990}
+                        quality={100}
+                        formats={['AUTO', 'WEBP', 'AVIF']}
+                        alt="Headshot"
+                      />
+                    </div><br/><br/> 
+
+                    Pattern library for developers to easily build components and maintain consistency:<br/><br/>
+
+                    <div className="wrapper">
+                      <StaticImage
+                        className="img"
+                        src="../images/TN-Design_Library.png"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
@@ -290,6 +402,14 @@ Livechat to challenge or understand exceptions would be a good thing<br/>
 
                 </td>
                 <td></td>
+              </tr>
+                    <tr>
+                      <td className="overline year"><h2>Challenges</h2></td>
+
+                      <td>Business stakeholders were hesitant to get feedback from customers on the designs and pricing models due to the sensitive nature of Tungsten's business model of charging WebForm suppliers. Competitors pricing models are free for suppliers using Webform and only charge when they integrate. The portal also has poor user experience and is a challenge for suppliers to submit their invoices. My suggestion was to introduce a freemium to premium model, and also improve the user experience of the portal so customers can see value and more likely to upgrade.<br/><br/>
+                </td>
+                      <td></td>
+                    </tr>
                   
                     <tr>
                       <td></td>
