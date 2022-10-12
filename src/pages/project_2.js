@@ -243,7 +243,7 @@ const ArchivePage = ({ location, data }) => {
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-03.jpg"
+                        src="../images/TN-03.png"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
@@ -256,7 +256,7 @@ const ArchivePage = ({ location, data }) => {
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-04.png"
+                        src="../images/TN-04.jpg"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
@@ -267,7 +267,7 @@ const ArchivePage = ({ location, data }) => {
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-05.png"
+                        src="../images/TN-05.jpg"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
