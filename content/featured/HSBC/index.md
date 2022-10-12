@@ -1,13 +1,11 @@
 ---
-date: '2'
-title: 'Portal Improvements'
-cover: './TN-Invoice-Status.png'
-external: '/project_2'
-cta: '/project_2'
+date: '4'
+title: 'HSBC Digital Assistant'
+cover: './HSBC-Fusion-DA.png'
 tech:
-  - Design Thinking
+  - Conversational Design
   - UX/UI
-  - Figma
+  - Figma/Lucid
 ---
 
-Improving the portal experience by using design thinking techniques to understand where customers are struggling the most and how we can add value.
+Improving the conversational experience of HSBC's fusion digital assistant. Helping them find invoices, expenses and general HR questions quicker.
