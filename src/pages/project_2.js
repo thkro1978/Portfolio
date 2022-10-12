@@ -163,7 +163,7 @@ const ArchivePage = ({ location, data }) => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../images/TN-Onboarding-1.png"
+              src="../images/TN-Invoice-Status.png"
               maxWidth={990}
               quality={100}
               formats={['AUTO', 'WEBP', 'AVIF']}
@@ -180,54 +180,6 @@ const ArchivePage = ({ location, data }) => {
                 <td>To improve Tungsten Network's supplier portal experience and become a more customer-led organisation an initiative was created to implement design thinking processes into the business. 
                   My role was to help lead the customer research and facilitation of design thinking workshops. These workshops were used to understand our customers better to deliver creative solutions 
                   and help solve common pain points. After each key project milestone, I would provide updates to c-suite executives and heads of departments.<br/><br/>
-                </td>
-                <td></td>
-              </tr>
-
-              <tr>
-                <td className="overline year"><h2>Design Principals</h2></td>
-                <td>
-                <table>
-                  <tr>
-                    <th>Empathise</th><th>Ideate</th><th>Build, Measure + Learn</th>
-                  </tr>
-                  <tr>
-                    <td className="tech">Understanding the business goals and what success looks like for stakeholders. Interviewing users to understand their jobs to be done, where they are struggling, and where we can add value.</td>
-                    <td className="tech">Mapping out the various user journeys with pains and gains. Identifying key user outcomes to ideate and build low fidelity wireframes during internal workshops.</td>
-                    <td className="tech">Creating hi-fidelity wireframes using a design library for consistency. Recruiting users to gather feedback and validating the design before creating epics/stories to be picked for development.<br/><br/></td>
-                  </tr>
-                </table>
-                <div className="wrapper">
-                <StaticImage
-                        className="img"
-                        src="../images/TN-HCAI.png"
-                        maxWidth={990}
-                        quality={100}
-                        formats={['AUTO', 'WEBP', 'AVIF']}
-                        alt="Headshot"
-                      />
-                    </div><br/><br/> 
-
-                </td>
-                <td></td>
-              </tr>
-
-              <tr>
-              <td className="overline year"><h2>Building Empathy</h2></td>
-
-                <td>Together with the Product Manager, BA and Technical Leads, we collaborativley workshoped with various stakeholders and teams to 
-                understand the "As is" back office process. After a number of workshops we collaborativley defined the "To be" backend process using 
-                story mapping techniques to help create seamless user journeys, the relevant email notifications to be sent and key functional requirements.<br/><br/>
-                    <div className="wrapper">
-                      <StaticImage
-                        className="img"
-                        src="../images/TN-Persona.jpg"
-                        maxWidth={990}
-                        quality={100}
-                        formats={['AUTO', 'WEBP', 'AVIF']}
-                        alt="Headshot"
-                      />
-                    </div><br/><br/> 
                 </td>
                 <td></td>
               </tr>
