@@ -177,28 +177,10 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <td className="overline year"><h2>Problem</h2></td>
 
-                <td>One of the biggest challenges was uncovering manual back-office processes which needed to be understood, scoped, and digitised. 
-                  This took a lot of extra time and effort but was necessary to improve the end-user experience, solve key pain points and align with business goals 
-                  to fully automate the onboarding process. Another challenge was educating stakeholders to follow more agile and user-focused processes, by gathering 
-                  user feedaback and presenting research insights we helped to remove bias and keep them involved along the journey. They see that a lack of research 
-                  would also mean risks of doing re-work later on. Once the demonstrable product has been developed it will be released to a small number of customers 
-                  to test, allowing us to present a minimal piloted project to gather more data and insights before a full release to all customers.<br/><br/>
-                </td>
-                <td></td>
-              </tr>
-
-              <tr>
-              <td className="overline year"><h2>Product Vision</h2></td>
-
-                <td>
-                <b>"Getting suppliers on our network faster, with full visibility and improved communication between both buyer and supplier"</b><br/><br/>
-                  For suppliers, who want to get paid better, the supplier connect portal is an onboarding platform, that allows suppliers to onboard on 
-                  their own using an automated self service tool. Providing a faster way to get on the network as well as increasing visibility to both buyer
-                   and supplier. Unlike the current process which lacks automation and is prone to human error, our self service platform will remove manual processes,
-                    allowing suppliers to onboard as quickly as possible. <br/><br/>
-                    
-                   
-
+                <td>In order to improve cash flow and revenue, Tungsten Network prioritised a project to move their supplier billing platform to Salesforce and 
+                allow subscription based billing system for customers. This would help Tungsten to automate internal processes and allow customers to self serve 
+                during onboarding or when they decide to upgrade and increase their transactions. My role was to be the voice of the customer and create the 
+                smoothest onboarding journey for new customers as well as a seamless management of their account and upgrade paths.<br/><br/>
                 </td>
                 <td></td>
               </tr>
@@ -234,8 +216,9 @@ const ArchivePage = ({ location, data }) => {
               <tr>
               <td className="overline year"><h2>Building Empathy</h2></td>
 
-                <td>Together with the sales and implementation team, we identified key users and users currently struggling to onboard. I then interviewed our customers to understand them better to build our personas and empathy maps highlighting their biggest pain points during onboarding and what success looks like to them. I then presented these personas back to business to help build a common understanding of our customers and what we need to focus on during ideation.<br/><br/> 
-                    Some of the main pain points were not having visibility of the process and relying on email communications which delayed the process. The time taken to create the test file took too long as the amount of documentation was overwhelming to them, and too much back and forth between the customer, supplier, project manager and implementation team.<br/><br/>
+                <td>Together with the Product Manager, BA and Technical Leads, we collaborativley workshoped with various stakeholders and teams to 
+                understand the "As is" back office process. After a number of workshops we collaborativley defined the "To be" backend process using 
+                story mapping techniques to help create seamless user journeys, the relevant email notifications to be sent and key functional requirements.<br/><br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -346,26 +329,22 @@ Allow live chat between buyer and supplier to resolve issues quicker<br/><br/>
                 designs are a big improvement over the current offline process and had also suggested several improvements which we considered 
                 and highlighted to include in the final designs.<br/><br/>
 
-                <b>Customer Feedback (Positive)</b><br/><br/>
-                "Process is a lot simplier, best to do it online. I can login and see were I am at and what needs to be done"<br/>
-                "Big improvement, self service is the way forward"<br/>
-                "I can see the minimum requirements to create an invoice file, within hours I can create a test file"<br/><br/>
+                <b>Customer Feedback</b><br/><br/>
+                I want to know more about how the subscription model will work, how do I upgrade and downgrade my account?<br/>
+I don't see a summary of items I am purchasing while entering my card details<br/>
+Our company has multiple billing contacts and need to be able to manage that.<br/><br/>
 
                 <b>Action points based on feedback</b><br/><br/>
 
-                Allow for exporting of data and images for presentations<br/>
-                Show start dates and ETA of when they will finish their implemantation<br/>
-                Explain why fields are mandatory, which are country or customer compliant<br/>
-                Customer asking to input too many requirements so need to add a query button on certain mandatory fields<br/>
-                Supplier would like to notify the customer if they are having issues using livechat communication<br/><br/>
+                We added FAQs section which is linked to an external Salesforce knowledge based platform mainted by customer support.<br/>
+On checkout it was also mentioned it would be helpful to include a summary of the items to be purchased while completing the transaction.<br/>
+In many instances there are multiple billing contacts for larger customers so we add the ability to manage multiple contacts.<br/><br/>
                 </td>
                 <td></td>
               </tr>
 
               <tr>
               <td className="overline year"><h2>Designs</h2></td>
-
-                <td>Supplier reporting tool for accounts payable department to monitor supplier onboarding:<br/><br/>
 
                     <div className="wrapper">
                       <StaticImage
@@ -432,65 +411,11 @@ Allow live chat between buyer and supplier to resolve issues quicker<br/><br/>
                     <tr>
                       <td className="overline year"><h2>Challenges</h2></td>
 
-                      <td>One of the biggest challenges was uncovering manual back-office processes which needed to be understood, scoped, and digitised. 
-                  This took a lot of extra time and effort but was necessary to improve the end-user experience, solve key pain points and align with business goals 
-                  to fully automate the onboarding process. <br/><br/> 
-                  Another challenge was educating stakeholders to follow more agile and user-focused processes, by gathering 
-                  user feedaback and presenting research insights we helped to remove bias and keep them involved along the journey. They see that a lack of research 
-                  would also mean risks of doing re-work later on. Once the demonstrable product has been developed it will be released to a small number of customers 
-                  to test, allowing us to present a minimal piloted project to gather more data and insights before a full release to all customers.<br/><br/>
+                      <td>Business stakeholders were hesitant to get feedback from customers on the designs and pricing models due to the sensitive nature of Tungsten's business model of charging WebForm suppliers. Competitors pricing models are free for suppliers using Webform and only charge when they integrate. The portal also has poor user experience and is a challenge for suppliers to submit their invoices. My suggestion was to introduce a freemium to premium model, and also improve the user experience of the portal so customers can see value and more likely to upgrade.<br/><br/>
                 </td>
                       <td></td>
                     </tr>
-                    <tr>
-                      <td className="overline year"><h2>Outcomes</h2></td>
-
-                      <td>After a succesful beta we have launched the product to all customers.<br/><br/> 
-
-<ul>
-  <li>On average customers were able to complete their integration in 51 days, which was a reduction of 40% compared to the initial target of the usual 90 days</li> 
-  <li>Implementation agents noticed higher engagement rates and urgency from the supplier to complete their integration</li>
-</ul>
-
-During beta we identified key product enhancements based on user feedback and analysis of our KPIs which included the following:<br/><br/> 
-
-<ul>
-
-  <li>Not enough steps are automated and require manual processes which are prone to error and delays</li>
-  <li>Master map documentation could be further improved to make changes easier for the supplier</li>
-  <li>Allowing Custom Map option to the journey to reduce the changes to the supplier ERP and onboard even faster</li>
-  <li>Allowing sales to upsell current Web Form to start the self-service journey</li>
-</ul>
-
-<b>Next Step: Adding Custom Map to the journey</b><br/>
-Mapping out the future customer journey and story mapping the fuctional requirements, helping to build alignment within the 
-cross functional team and visualise key requirements.<br/><br/>
-
-                    <div className="wrapper">
-                      <StaticImage
-                        className="img"
-                        src="../images/TN-Custom-Map-1.jpg"
-                        maxWidth={990}
-                        quality={100}
-                        formats={['AUTO', 'WEBP', 'AVIF']}
-                        alt="Headshot"
-                      />
-                    </div><br/><br/> 
-
-                    <div className="wrapper">
-                      <StaticImage
-                        className="img"
-                        src="../images/TN-Custom-Map-2.jpg"
-                        maxWidth={990}
-                        quality={100}
-                        formats={['AUTO', 'WEBP', 'AVIF']}
-                        alt="Headshot"
-                      />
-                    </div><br/><br/> 
-
-                      </td>
-                      <td></td>
-                    </tr>
+                  
                     <tr>
                       <td></td>
                       <td><a className="ViewProjects" href="../#projects">View Projects ></a></td>
