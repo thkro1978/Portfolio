@@ -1,13 +1,13 @@
 ---
 date: '2'
-title: 'HSBC Digital Assistant'
-cover: './HSBC-Fusion-DA.png'
+title: 'Subscription Pricing'
+cover: './TN-Pricing.png'
 external: '/project_2'
 cta: '/project_2'
 tech:
-  - Conversational Design
+  - B2B SAAS
   - UX/UI
   - Figma/Lucid
 ---
 
-Helping employees to quickly find the status of their invoices, check their card expenseses and general HR questions using Oracle's Digital Assistant platform.
+Moving suppliers to a subscription pricing model to help improve revenue and automate backend processes, as well as allowing suppliers to upgrade or downgrade their accounts at any time.
