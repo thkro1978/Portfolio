@@ -1,13 +1,13 @@
 ---
 date: '2'
-title: 'Subscription Pricing'
-cover: './TN-Pricing.png'
+title: 'Portal Improvements'
+cover: './TN-Invoice-Status.png'
 external: '/project_2'
 cta: '/project_2'
 tech:
-  - B2B SAAS
+  - Design Thinking
   - UX/UI
-  - Figma/Lucid
+  - Figma
 ---
 
-Moving suppliers to a subscription pricing model to help improve revenue and automate backend processes, as well as allowing suppliers to upgrade or downgrade their accounts at any time.
+Improving the portal experience by using design thinking techniques to understand where customers are struggling the most and how we can add value.
