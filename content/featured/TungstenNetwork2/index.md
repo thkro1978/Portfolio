@@ -1,7 +1,7 @@
 ---
 date: '2'
 title: 'Portal Improvements'
-cover: './TN-Pricing.png'
+cover: './TN-Invoice-Status.png'
 external: '/project_2'
 cta: '/project_2'
 tech:
