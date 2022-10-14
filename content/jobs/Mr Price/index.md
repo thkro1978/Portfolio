@@ -7,6 +7,7 @@ range: 'July - December 2008'
 url: 'https://mrprice.com/'
 ---
 
-- Engineered and maintained major features of Starry's customer-facing web app using ES6, Handlebars, Backbone, Marionette and CSS
-- Proposed and implemented scalable solutions to issues identified with cloud services and applications responsible for communicating with Starry Station
-- Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across Starry’s iOS and Android mobile apps
+- Interaction design of in-store touchscreen devices
+- Collaboratively working with business stakeholders & dev teams
+- Using animation & interactive 3D products for an immersive experience
+- Testing and gathering user feedback
