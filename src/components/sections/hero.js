@@ -64,8 +64,8 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a UX Designer specializing in the creation of exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
+        I’m a UX Designer specialising in the creation of exceptional
+        digital experiences. Currently, I’m focused on building human-centered products
         at{' '}
         <a href="https://oracle.com/" target="_blank" rel="noreferrer">
           Oracle
