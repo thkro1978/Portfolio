@@ -8,4 +8,4 @@ tech:
   - Figma/Lucid
 ---
 
-Improving the conversational experience of HSBC's fusion digital assistant. Helping employees find the status of invoices, track expenses quicker and eaily ask general HR questions to common issues.
+Improving the conversational experience of HSBC's fusion digital assistant. Helping employees find the status of invoices, track card expenses and ask general HR questions.
