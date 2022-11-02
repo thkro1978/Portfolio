@@ -380,7 +380,7 @@ Blues and green were used to convey trust and freshness, as we wanted to differe
               </tr>
 
                     <tr>
-                      <td className="overline year"><h2>Challenges</h2></td>
+                      <td className="overline year"><h2>Outcomes</h2></td>
 
                       <td>I worked closely with the dev team to ensure a smooth design-into-code transition. I also performed design QA on the developed product to make sure it met the design specifications.<br/><br/>
 
