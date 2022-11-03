@@ -132,14 +132,14 @@ const About = () => {
           <div>
             <p>
               Hello! My name is Thomas and I enjoy creating interactive experiences that help improve our lives. My interest in design started back in 1999 when I got my
-              first Mac computer, learning the foundations of good design and creating interactive experiences.
+              first Mac computer, learning the foundations of good design, programming, interaction and animation.
             </p>
 
             <p>
-              Fast-forward to today, I now have 20 years design experience and have the privilege of working at{' '}
+              Fast-forward to today, I now have 20 years experience and have had the privilege of working at{' '}
               <a href="https://oracle.com/">a rather large tech company</a>. Previously I worked at {' '}
-              <a href="https://appadvice.com/app/autotrip-mileage-tracker/1480711539"> a global invoice automation company</a>,{' '}
-              <a href="https://www.tungsten-network.com">a start-up</a>, and{' '}
+              <a href="https://www.tungsten-network.com"> a global invoice automation company</a>,{' '}
+              <a href="https://appadvice.com/app/autotrip-mileage-tracker/1480711539>a start-up</a>, and{' '}
               <a href="https://kroell.co.uk/">my own digital design studio</a>. My
               main focus these days is building a wide range of products and digital
               experiences at <a href="https://oracle.com/">Oracle</a> for a variety of
