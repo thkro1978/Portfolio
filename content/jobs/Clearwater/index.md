@@ -1,9 +1,9 @@
 ---
 date: '2015-12-21'
-title: 'Creative Technologist'
+title: 'Designer'
 company: 'Clearwater'
 location: 'Johannesburg, RSA'
-range: 'Jan 2002 - Dec 2004'
+range: 'Jan 2002 - Jun 2005'
 url: 'https://www.clearwater.co.za'
 ---
 
