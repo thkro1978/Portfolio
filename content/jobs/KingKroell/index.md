@@ -3,7 +3,7 @@ date: '2017-04-01'
 title: 'Digital Designer'
 company: 'Self Employed'
 location: 'Northeastern University'
-range: 'Sept 2008 - March 2019'
+range: 'Sep 2008 - Mar 2019'
 url: 'https://www.kroell.co.uk'
 ---
 
