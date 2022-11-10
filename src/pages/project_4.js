@@ -284,7 +284,7 @@ const ArchivePage = ({ location, data }) => {
                     </div><br/><br/>
                     <ul>
                       <li>Removing the carousel as it did not add value and felt like a microsite instead a conversation experience.</li>
-                      <li>Starting the conversation by asking the user to type their query and then guide them
+                      <li>Starting the conversation by asking the user to type their query and then guide them</li>
                       <li>Add the ability to easily reset the conversation if they get stuck.</li>
                     </ul>
                     <br/><br/>  
