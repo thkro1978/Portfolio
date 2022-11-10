@@ -176,7 +176,7 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               <tr>
                 <td className="overline year"><h2>Problem</h2></td>
-                There were concerns on the current experience and wanted to improve the user journey before launching to a broader audience. Improving the user journey will help reduce support tickets and improve the procurement experience for HSBC employees.<td>
+                There were concerns on the current experience and wanted to improve the user journey before launching to a broader audience. Improving the user journey will help reduce support tickets and improve the procurement experience for HSBC employees. <br/><br/> <td>
                 </td>
                 <td></td>
               </tr>
@@ -184,7 +184,7 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <td className="overline year"><h2>Design Sprints</h2></td>
                 <td>
-                Firstly I setup a design sprint to help break down the problem and help us ideate solutions to solve the problem at hand.
+                I initiated a design sprint with project stakeholders and tech team to better understand the business challenges and customer pain points and goals. This would help us ideate solutions collaboratively to help solve the problem at hand.
                 <div className="wrapper">
                 <StaticImage
                         className="img"
@@ -201,9 +201,9 @@ const ArchivePage = ({ location, data }) => {
               </tr>
 
               <tr>
-              <td className="overline year"><h2>Introductions & Stakeholder Mapping</h2></td>
+              <td className="overline year"><h2>Introductions</h2></td>
 
-                <td>Mapping out the various stakeholders in the business and understand the project goals from their perspective.<br/><br/>
+                <td>Firstly, I mapped out the various stakeholders in the business and wrote down the project goals from their perspective.<br/><br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -219,9 +219,9 @@ const ArchivePage = ({ location, data }) => {
               </tr>
 
               <tr>
-              <td className="overline year"><h2>Reviewing Personas & Journey Map</h2></td>
+              <td className="overline year"><h2>Reviewing Personas</h2></td>
 
-                <td>Reviewing personas so we can understand who we are desiging for<br/><br/>
+                <td>I then reviewed their existing personas and adjusted based on stakeholder feedback. Based on feedback, the basic end-user "Charlie" was driving the most support queries so was important to focus on her pain points. Using these personas we created a journey map and plotted out the steps, pain points and opportunities to improve.<br/><br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -240,6 +240,8 @@ const ArchivePage = ({ location, data }) => {
               <td className="overline year"><h2>Ideation</h2></td>
 
                 <td>Based on key pain points I formulated "How might we..." questions to help kick start the ideation process.<br/><br/>
+                  "How might we better display the list of invoices & expenses?"<br/>
+                    
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -250,7 +252,7 @@ const ArchivePage = ({ location, data }) => {
                         alt="Headshot"
                       />
                     </div>
-                    <br/><br/>
+                    <br/>
                     <ul>
                       <li>Improving the invoices status layout to make information & status clearer.</li>
                       <li>Searching for invoices was too complex in the chat window so better to drive users to Fusion for complex searches</li>
@@ -266,12 +268,13 @@ const ArchivePage = ({ location, data }) => {
                         alt="Headshot"
                       />
                     </div>
-                    <br/><br/>
+                    <br/>
                     <ul>
                       <li>Improving the information layout and highlighting which expenses have been raised</li>
                       <li>Searching for expenses was too complex in the chat window so better to drive users to Fusion for complex searches</li>
                     </ul>
                     <br/><br/> 
+                        "How might we improve the visual design and introduction message of the assistant?"<br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -281,7 +284,7 @@ const ArchivePage = ({ location, data }) => {
                         formats={['AUTO', 'WEBP', 'AVIF']}
                         alt="Headshot"
                       />
-                    </div><br/><br/>
+                    </div><br/>
                     <ul>
                       <li>Removing the carousel as it did not add value and felt like a microsite instead a conversation experience.</li>
                       <li>Starting the conversation by asking the user to type their query and then guide them</li>
