@@ -1,7 +1,7 @@
 ---
 date: '2017-04-01'
 title: 'Digital Designer'
-company: 'Self Employed'
+company: 'King Kroell'
 location: 'Northeastern University'
 range: 'Sep 2008 - Mar 2019'
 url: 'https://www.kroell.co.uk'
