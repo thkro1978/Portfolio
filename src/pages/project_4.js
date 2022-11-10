@@ -176,7 +176,7 @@ const ArchivePage = ({ location, data }) => {
             <tbody>
               <tr>
                 <td className="overline year"><h2>Problem</h2></td>
-                There were concerns on the current experience and wanted to improve the user journey before launching to a broader audience. Improving the user journey will help reduce support tickets and improve the procurement experience for HSBC employees. <br/><br/> <td>
+                HSBC had an exisiting assistant to help with procurement queries but they had concerns on the current experience and wanted to improve the flows before launching to a broader audience. From a business perspective improving the user journey will create a more seamless procurement experience for HSBC employees and help reduce support tickets for operations.<br/><br/> <td>
                 </td>
                 <td></td>
               </tr>
@@ -184,7 +184,7 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <td className="overline year"><h2>Design Sprints</h2></td>
                 <td>
-                I initiated a design sprint with project stakeholders and tech team to better understand the business challenges and customer pain points and goals. This would help us ideate solutions collaboratively to help solve the problem at hand.
+                I initiated a design sprint with project stakeholders and technical implementation to better understand the business goals, challenges and customer pain points. This would help us ideate solutions collaboratively to help solve the right problem at hand.
                 <div className="wrapper">
                 <StaticImage
                         className="img"
@@ -240,7 +240,7 @@ const ArchivePage = ({ location, data }) => {
               <td className="overline year"><h2>Ideation</h2></td>
 
                 <td>Based on key pain points I formulated "How might we..." questions to help kick start the ideation process.<br/><br/>
-                  "How might we better display the list of invoices & expenses?"<br/>
+                  "How might we better display the list of invoices?"<br/>
                     
                     <div className="wrapper">
                       <StaticImage
@@ -255,9 +255,10 @@ const ArchivePage = ({ location, data }) => {
                     <br/>
                     <ul>
                       <li>Improving the invoices status layout to make information & status clearer.</li>
-                      <li>Searching for invoices was too complex in the chat window so better to drive users to Fusion for complex searches</li>
+                      <li>Searching for invoices was too complex in the chat window, so we added a link to Fusion for complex searches</li>
                     </ul>
                     <br/><br/> 
+                    "How might we better display the list of expenses?"<br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -271,10 +272,10 @@ const ArchivePage = ({ location, data }) => {
                     <br/>
                     <ul>
                       <li>Improving the information layout and highlighting which expenses have been raised</li>
-                      <li>Searching for expenses was too complex in the chat window so better to drive users to Fusion for complex searches</li>
+                      <li>Searching for expenses was too complex in the chat window, so we added a link to Fusion for complex searches</li>
                     </ul>
                     <br/><br/> 
-                        "How might we improve the visual design and introduction message of the assistant?"<br/>
+                        "How might we improve the assistan visual design and the intro conversation?"<br/>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -289,6 +290,7 @@ const ArchivePage = ({ location, data }) => {
                       <li>Removing the carousel as it did not add value and felt like a microsite instead a conversation experience.</li>
                       <li>Starting the conversation by asking the user to type their query and then guide them</li>
                       <li>Add the ability to easily reset the conversation if they get stuck.</li>
+                      <li>Follow HSBC brand guidelines by adding red, black and grey to the UI.</li>
                     </ul>
                     <br/><br/>  
                 </td>
@@ -315,11 +317,11 @@ const ArchivePage = ({ location, data }) => {
               </tr>
 
               <tr>
-              <td className="overline year"><h2>Takeaways</h2></td>
+              <td className="overline year"><h2>User Feedback</h2></td>
 
-                <td>After presenting the live demo of the flow and UIs we gathered feedback to further improve the experience by:<br/>
+                <td>After presenting the live demo of the improved flow and UIs, we gathered feedback to further improve the experience by:<br/>
                 <ul>
-                  <li>Removing the reset conversation button and allowing the user to type "Menu".</li>
+                  <li>Removing the reset conversation button and allowing the user to type "Menu" at any time.</li>
                   <li>Adding a carousel option for multiple answers to FAQ questions to reduce vertical scrolling.</li>
                 </ul>
                   
