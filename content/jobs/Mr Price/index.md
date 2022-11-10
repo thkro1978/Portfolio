@@ -3,7 +3,7 @@ date: '2016-12-21'
 title: 'Interaction Designer'
 company: 'Mr Price'
 location: 'Durban, RSA'
-range: 'July - December 2008'
+range: 'Sep 2005 - Aug 2008'
 url: 'https://mrprice.com/'
 ---
 
