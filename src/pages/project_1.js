@@ -177,12 +177,9 @@ const ArchivePage = ({ location, data }) => {
               <tr>
                 <td className="overline year"><h2>Problem</h2></td>
 
-                <td>One of the biggest challenges was uncovering manual back-office processes which needed to be understood, scoped, and digitised. 
-                  This took a lot of extra time and effort but was necessary to improve the end-user experience, solve key pain points and align with business goals 
-                  to fully automate the onboarding process. Another challenge was educating stakeholders to follow more agile and user-focused processes, by gathering 
-                  user feedaback and presenting research insights we helped to remove bias and keep them involved along the journey. They see that a lack of research 
-                  would also mean risks of doing re-work later on. Once the demonstrable product has been developed it will be released to a small number of customers 
-                  to test, allowing us to present a minimal piloted project to gather more data and insights before a full release to all customers.<br/><br/>
+                <td>It takes up to 9 months to onboard a high volume integrated supplier and start transacting on the network. In that time there is high churn rate and a loss of potential revenue while the supplier is not transacting on the network.
+
+Too much time is spent manually onboarding the supplier, dealing with support queries and reminding the supplier and their buyer to complete outstanding tasks.<br/><br/>
                 </td>
                 <td></td>
               </tr>
