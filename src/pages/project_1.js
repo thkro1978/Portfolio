@@ -232,7 +232,7 @@ Too much time is spent manually onboarding the supplier, dealing with support qu
               <td className="overline year"><h2>Building Empathy</h2></td>
 
                 <td>Together with the sales and implementation team, we identified key users and those who are currently struggling to onboard. I then interviewed customers to understand them better to build out personas, empathy maps and journey maps highlighting their pain points during onboarding and where we need to improve. I then presented these personas back to business to help build a common understanding of our customers and what we need to focus on during ideation.<br/><br/> 
-                    Some of the main pain points were <br/>
+                    Some of the main pain points were:<br/>
                       <ul>
                         <li>Not understanding the amount of work involved and full visibility of the process.</li>
                         <li>Too much back and forth via emails between the customer, supplier, project manager and implementation team.</li>
