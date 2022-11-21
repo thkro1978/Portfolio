@@ -231,8 +231,14 @@ Too much time is spent manually onboarding the supplier, dealing with support qu
               <tr>
               <td className="overline year"><h2>Building Empathy</h2></td>
 
-                <td>Together with the sales and implementation team, we identified key users and users currently struggling to onboard. I then interviewed our customers to understand them better to build our personas and empathy maps highlighting their biggest pain points during onboarding and what success looks like to them. I then presented these personas back to business to help build a common understanding of our customers and what we need to focus on during ideation.<br/><br/> 
-                    Some of the main pain points were not having visibility of the process and relying on email communications which delayed the process. The time taken to create the test file took too long as the amount of documentation was overwhelming to them, and too much back and forth between the customer, supplier, project manager and implementation team.<br/><br/>
+                <td>Together with the sales and implementation team, we identified key users and those who are currently struggling to onboard. I then interviewed customers to understand them better to build out personas, empathy maps and journey maps highlighting their pain points during onboarding and where we need to improve. I then presented these personas back to business to help build a common understanding of our customers and what we need to focus on during ideation.<br/><br/> 
+                    Some of the main pain points were <br/>
+                      <ul>
+                        <li>Not understanding the amount of work involved and full visibility of the process.</li>
+                        <li>Too much back and forth via emails between the customer, supplier, project manager and implementation team.</li>
+                        <li>The time taken to create the test file took too long as the amount of documentation was overwhelming to them.</li>
+                        <br/><br/>
+                      </ul>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
