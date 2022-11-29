@@ -251,10 +251,6 @@ const ArchivePage = ({ location, data }) => {
               <tr>
               <td className="overline year"><h2>Designs</h2></td>
               <td>
-                    
-
-                  
-
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -276,12 +272,17 @@ const ArchivePage = ({ location, data }) => {
                         alt="Headshot"
                       />
                     </div><br/><br/> 
-
-              
-
                 </td>
                 </tr>
-                
+
+            <tr>
+              <td className="overline year"><h2>Outcomes </h2></td>
+
+                <td>After business analysis and technical scoping, it was decided to de-scope the improvements due to the lack of resources and the time it would take to change the protal. 
+                  Based on this we decided to make improvements to the current UI copy and self help tool to better guide the user, as this required the least amount of development work until more resources could be assigned.
+                  </td>
+                <td></td>
+              </tr>
                   
                     <tr>
                       <td></td>
