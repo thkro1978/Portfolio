@@ -155,7 +155,7 @@ const ArchivePage = ({ location, data }) => {
 
       <main>
         <header ref={revealTitle}>
-          <h1 className="big-heading">Onboarding Portal</h1>
+          <h1 className="big-heading">Portal Improvements</h1>
           <p className="subtitle">Client: Tungsten Network<br/> Role: Lead UX Designer
            </p>
         </header>
