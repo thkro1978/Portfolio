@@ -223,23 +223,6 @@ const ArchivePage = ({ location, data }) => {
                         alt="Headshot"
                       />
                     </div><br/><br/> 
-                </td>
-                <td></td>
-              </tr>    
-
-              
-              <tr>
-              <td className="overline year"><h2>Prototyping + Testing </h2></td>
-
-                <td>Interactive high fidelity protoypes were created for user testing and feedback. Using hotjar, I ran a survey on the portal asking the users to view the new status page prototype with open ended questions to get there feelings and detailed unbiased feedback. 
-                  This helped us get customer perspective of the design using a low-cost prototype requiring no development. Quickly identify if we are going in the right direction and iterating based on feedback.<br/><br/>
-                </td>
-                <td></td>
-              </tr>
-
-              <tr>
-              <td className="overline year"><h2>Designs</h2></td>
-              <td>
                     <div className="wrapper">
                       <StaticImage
                         className="img"
@@ -250,13 +233,32 @@ const ArchivePage = ({ location, data }) => {
                         alt="Headshot"
                       />
                     </div><br/><br/> 
+                </td>
+                <td></td>
+              </tr>    
 
-                    Iteraction<br/>
+              
+              <tr>
+              <td className="overline year"><h2>Prototyping + Testing </h2></td>
+
+                <td>Interactive high fidelity protoypes were created for user testing and feedback. Using hotjar, I ran a survey on the portal asking the users to view the new status page prototype with open ended questions to get there feelings and detailed unbiased feedback. 
+                  This helped us get customer perspective of the design using a low-cost prototype requiring no development. Quickly identify if we are going in the right direction and iterating based on feedback.<br/><br/>
+                
+                    </td>
+                <td></td>
+              </tr>
+
+              <tr>
+              <td className="overline year"><h2>Designs</h2></td>
+              <td>
+                    
+
+                  
 
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-04.jpg"
+                        src="../images/TN-05.jpg"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
@@ -267,7 +269,7 @@ const ArchivePage = ({ location, data }) => {
                     <div className="wrapper">
                       <StaticImage
                         className="img"
-                        src="../images/TN-05.jpg"
+                        src="../images/TN-04.jpg"
                         maxWidth={990}
                         quality={100}
                         formats={['AUTO', 'WEBP', 'AVIF']}
