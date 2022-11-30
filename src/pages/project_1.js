@@ -451,8 +451,8 @@ Allow live chat between buyer and supplier to resolve issues quicker<br/><br/>
                       <td>After a succesful beta we have launched the product to all customers.<br/><br/> 
 
 <ul>
-  <li>On average customers were able to complete their integration in 51 days, which was a reduction of 40% compared to the initial target of the usual 90 days</li> 
-  <li>Implementation agents noticed higher engagement rates and urgency from the supplier to complete their integration</li>
+  <li>On average customers were able to complete their integration in 71 days, which was well within the initial target of 90 days.</li> 
+  <li>Implementation agents noticed higher engagement rates and urgency from the supplier to complete their integration.</li>
 </ul>
 
 During beta we identified key product enhancements based on user feedback and analysis of our KPIs which included the following:<br/><br/> 
