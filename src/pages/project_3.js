@@ -360,7 +360,7 @@ Blues and green were used to convey trust and freshness, as we wanted to differe
               <td className="overline year"><h2>Testing + Validation</h2></td>
 
                 <td>I worked with an research agency to source a database of 500 drivers throughout the UK who currently submit business mileage claims. 
-                  I worked on a survey together with stakeholders and build a lo-fidelity prototype to include to validate the user journeys and functionality. 
+                  I worked on a survey together with stakeholders and build a hi-fidelity prototype to include to validate the user journeys and functionality. 
                   After recieving all the data I presented to everyone showing the feedback we got. Overall drivers like the idea and said it they would definetly use the app, 
                   it was also interesting that a lot of users were using Google Maps, so this was something I kept in mind while designing the live view + trips page to fit in with 
                   the user's mental model. There was also additional functionality we identified that we could include in future iterations.
