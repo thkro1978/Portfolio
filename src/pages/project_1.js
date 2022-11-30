@@ -343,9 +343,7 @@ Allow live chat between buyer and supplier to resolve issues quicker<br/><br/>
               <tr>
               <td className="overline year"><h2>Prototyping + Testing </h2></td>
 
-                <td>The last phase would be iterating on lo-fi wireframes with the team, presenting back to stakeholders and customers 
-                for further feedback before building hi-fi wireframes with the UI designer. During this phase, we presented final UIs 
-                for the last round of customer feedback before handing it over for development. Customers agreed that the new process and 
+                <td>The last phase would be creating hi-fi prototypes and gathering customer feedback before handing it over for development. Customers agreed that the new process and 
                 designs are a big improvement over the current offline process and had also suggested several improvements which we considered 
                 and highlighted to include in the final designs.<br/><br/>
 
@@ -356,11 +354,12 @@ Allow live chat between buyer and supplier to resolve issues quicker<br/><br/>
 
                 <b>Action points based on feedback</b><br/><br/>
 
-                Allow for exporting of data and images for presentations<br/>
-                Show start dates and ETA of when they will finish their implemantation<br/>
-                Explain why fields are mandatory, which are country or customer compliant<br/>
-                Customer asking to input too many requirements so need to add a query button on certain mandatory fields<br/>
-                Supplier would like to notify the customer if they are having issues using livechat communication<br/><br/>
+                - Allow for exporting of data and images for presentations<br/>
+                - Show start dates and ETA of when they will finish their implemantation<br/>
+                - Explain why fields are mandatory, which are country or customer compliant<br/>
+                - Customer asking to input too many requirements so need to add a query button on certain mandatory fields<br/>
+                - Split the questionnaire into technical and AR questions<br/>
+                - Supplier would like to notify the customer if they are having issues using livechat communication<br/><br/>
                 </td>
                 <td></td>
               </tr>
