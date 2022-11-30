@@ -257,8 +257,8 @@ Too much time is spent manually onboarding the supplier, dealing with support qu
               <td className="overline year"><h2>Journey Mapping</h2></td>
 
                 <td>While mapping the customer journey I was able to highlight parts the journey where the customer was struggling.<br/><br/>
-                Questionnaire - Some parts of the implementation require a more technical person to assist with the set-up instead of the account owner
-                Creating the test file - Documentation was overwhelming and caused delays in customer sending their first invoice scenario
+                Questionnaire - Some parts of the implementation require a more technical person to assist with the set-up instead of the account owner<br/><br/>
+                Creating the test file - Documentation was overwhelming and caused delays in customer sending their first invoice scenario<br/><br/>
                 Approval of PDF example - There are communication delays and too many errors on the final step of the implementation process<br/><br/>
                     <div className="wrapper">
                       <StaticImage
